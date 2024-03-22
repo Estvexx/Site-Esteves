@@ -1,0 +1,28 @@
+body {
+    background-image: url("../imagem/Fundo.jpg");
+    background-size: cover;
+    /* Ajusta o tamanho da imagem para cobrir todo o fundo */
+    background-position: center;
+    /* Centraliza a imagem */
+background-repeat: no-repeat;
+height: 100%;
+
+}
+
+html{
+
+height:100%;
+}
+
+footer {
+    position: fixed;
+    text-align:center;   
+    width: 100%;
+    bottom:0px;
+    left:0px;
+	font-size: 15px;
+    padding: 5px;
+    background-color: rgba(0,0,0,.3);
+    backdrop-filter: blur(5px);
+	 
+}

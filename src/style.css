@@ -1,0 +1,141 @@
+.centralizar{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction:column;
+
+}
+#espacamentoinicial{
+    padding-top: 200px;
+}
+#titulosecundario{
+    margin-left: 100px;
+}
+.configperfil{
+    display: flex;
+    align-items: center;
+    padding-top: 150px;
+    margin-left: 100px;
+   
+}
+#textoperfil{
+    font-size: 60px;
+    font-weight: bold;
+}
+#espacamentoregistrar{
+    padding-top: 100px;
+}
+.centralizarespecial{
+    display: flex;
+    flex-direction: row; /* Para alinhar os elementos horizontalmente */
+    justify-content: center; /* Para centralizar horizontalmente */
+    align-items: center; /* Para centralizar verticalmente objetos*/
+    text-align: center; /* Para centralizar horizontalmente textos*/
+    }
+
+.centralizarespecial span {
+        margin-right: 10px; /* Espaçamento entre o texto e a caixa de entrada */
+}
+
+.inputs{
+    margin: 5px;
+}
+#labelcheck{
+    font-size: 15px;
+}
+#setaesquerda{
+    padding: 0px;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 30px;
+}
+.centralizarimg{
+    margin: 30px;
+}
+.animacao{
+background-color: #dbb6bb;
+border-radius: 8px;
+color: black;
+border: 2px solid black;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+}
+.caixa1{
+    background-color: rgba(219,182,187,.5);  
+    backdrop-filter: blur(5px);
+    border: 2px solid black;
+}
+
+#login{
+    width: 100px;
+    height: 30px;
+    margin: 5px;
+    padding: 0px;
+}
+#inscrever{
+    width: 150px;
+    height: 40px;
+    margin: 10px;
+    padding: 0px;
+}
+#check{
+    margin: 10px;
+}
+#textoesqueci{
+    text-decoration: none;
+    color: black;
+}
+
+#textoesqueci:hover{
+    color: rgb(88, 88, 88);
+}
+
+#textosabermais{
+    text-decoration: none;
+    color: black;
+}
+#textosabermais:hover{
+    color: rgb(88, 88, 88);
+}
+
+.animacao:hover{
+    background-color: #ffb6ef;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transition-duration: 0.4s;
+}
+
+.corner{
+    top: 30px;
+    right: 30px;
+    position: absolute;
+}
+
+table{  
+    width: 80%;
+    margin:auto;
+    
+}
+tr{
+    height: 50px;
+    background-color: #ffcff5;
+    border:1px solid black;
+    font-weight: bold;
+}
+
+td {
+    width: 100px;
+    background-color: #fad9f3;
+    border:1px solid black;
+  } 
+  thead th{
+    width: 80%;
+}
+
+table caption{
+    position: relative;
+    top: -10px;
+    caption-side: top;
+    text-align: right;
+}
