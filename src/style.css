@@ -1,141 +1,233 @@
-.centralizar{
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction:column;
+.centralizar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
 }
-#espacamentoinicial{
+
+#espacamentoinicial {
     padding-top: 200px;
 }
-#titulosecundario{
+
+#titulosecundario {
     margin-left: 100px;
 }
-.configperfil{
+
+.configperfil {
     display: flex;
     align-items: center;
     padding-top: 150px;
     margin-left: 100px;
-   
+
 }
-#textoperfil{
+
+#textoperfil {
     font-size: 60px;
     font-weight: bold;
 }
-#espacamentoregistrar{
+
+#espacamentoregistrar {
     padding-top: 100px;
 }
-.centralizarespecial{
+
+.centralizarespecial {
     display: flex;
-    flex-direction: row; /* Para alinhar os elementos horizontalmente */
-    justify-content: center; /* Para centralizar horizontalmente */
-    align-items: center; /* Para centralizar verticalmente objetos*/
-    text-align: center; /* Para centralizar horizontalmente textos*/
-    }
+    flex-direction: row;
+    /* Para alinhar os elementos horizontalmente */
+    justify-content: center;
+    /* Para centralizar horizontalmente */
+    align-items: center;
+    /* Para centralizar verticalmente objetos*/
+    text-align: center;
+    /* Para centralizar horizontalmente textos*/
+}
 
 .centralizarespecial span {
-        margin-right: 10px; /* Espaçamento entre o texto e a caixa de entrada */
+    margin-right: 10px;
+    /* Espaçamento entre o texto e a caixa de entrada */
 }
 
-.inputs{
+.inputs {
     margin: 5px;
 }
-#labelcheck{
+
+#labelcheck {
     font-size: 15px;
 }
-#setaesquerda{
+
+#setaesquerda {
     padding: 0px;
     font-size: 40px;
     text-align: center;
     border-radius: 30px;
 }
-.centralizarimg{
+
+.centralizarimg {
     margin: 30px;
 }
-.animacao{
-background-color: #dbb6bb;
-border-radius: 8px;
-color: black;
-border: 2px solid black;
-padding: 15px 32px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
+
+.animacao {
+    background-color: #dbb6bb;
+    border-radius: 8px;
+    color: black;
+    border: 2px solid black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
-.caixa1{
-    background-color: rgba(219,182,187,.5);  
+
+.caixa1 {
+    background-color: rgba(219, 182, 187, .5);
     backdrop-filter: blur(5px);
     border: 2px solid black;
 }
 
-#login{
+#login {
     width: 100px;
     height: 30px;
     margin: 5px;
     padding: 0px;
 }
-#inscrever{
+
+#inscrever {
     width: 150px;
     height: 40px;
     margin: 10px;
     padding: 0px;
 }
-#check{
+
+#check {
     margin: 10px;
 }
-#textoesqueci{
+
+#textoesqueci {
     text-decoration: none;
     color: black;
 }
 
-#textoesqueci:hover{
+#textoesqueci:hover {
     color: rgb(88, 88, 88);
 }
 
-#textosabermais{
+#textosabermais {
     text-decoration: none;
     color: black;
 }
-#textosabermais:hover{
+
+#textosabermais:hover {
     color: rgb(88, 88, 88);
 }
 
-.animacao:hover{
+.animacao:hover {
     background-color: #ffb6ef;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     transition-duration: 0.4s;
 }
 
-.corner{
+.corner {
     top: 30px;
     right: 30px;
     position: absolute;
 }
 
-table{  
+table {
     width: 80%;
-    margin:auto;
-    
+    margin: auto;
+
 }
-tr{
+
+tr {
     height: 50px;
     background-color: #ffcff5;
-    border:1px solid black;
-    font-weight: bold;
+    border: 1px solid black;
 }
 
 td {
     width: 100px;
     background-color: #fad9f3;
-    border:1px solid black;
-  } 
-  thead th{
+    border: 1px solid black;
+}
+
+thead th {
     width: 80%;
 }
 
-table caption{
+table caption {
     position: relative;
     top: -10px;
     caption-side: top;
     text-align: right;
+}
+
+.checkboxtables {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    display: block;
+}
+
+#checkboxedit {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    display: block;
+}
+
+.date {
+    margin: auto;
+    display: block;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fad9f3;
+    border-radius: 8px;
+    margin: 15% auto;
+    padding: 15px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#gravar {
+    margin: auto;
+    display: block;
+}
+
+.botoesmodal {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.botoesmodal button {
+    margin: 0 5px;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,59 +8,99 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="stylebase.css">
 </head>
+
 <body>
     <div class="paginaperfil">
-    <div class="corner">
-        <a href="gerirperfil.html"><button class="animacao">Gerir Perfil</button></a>
-        <button class="animacao">Terminar sessão</button>
+        <div class="corner">
+            <a href="gerirperfil.html"><button class="animacao">Gerir Perfil</button></a>
+            <a href="index.html"><button class="animacao">Terminar Sessão</button></a>
+        </div>
+
+        <div class="configperfil">
+            <img width="250" src="../imagem/perfil.png" alt="Perfil" />
+            <p id="textoperfil">Olá Francisco</p>
+        </div>
+        <div>
+            <h1 id="titulosecundario">As minhas tarefas</h1>
+        </div>
+
+        <div>
+            <table>
+                <div>
+                    <!-- Botão para abrir a modal de criar tarefa -->
+                    <caption><button class="animacao" id="openCreateModalBtn">Criar Tarefa</button></caption>
+                </div>
+                <thead>
+                    <tr>
+                        <th>Tarefa</th>
+                        <th>Data</th>
+                        <th>Estado</th>
+                        <th>Editar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fazer o Lab1 de PW</td>
+                        <td><input class="date" type="date" /></td>
+                        <td> <input type="checkbox" class="checkboxtables"></td>
+                        <td><input class="edit-button" id="checkboxedit" type="image" src="../imagem/edit.png"
+                                alt="Edit">
+                    </tr>
+
+                    <tr>
+                        <td>Fazer o Lab2 de PW</td>
+                        <td><input class="date" type="date" /></td>
+                        <td><input type="checkbox" class="checkboxtables"></td>
+                        <td><input class="edit-button" id="checkboxedit" type="image" src="../imagem/edit.png"
+                                alt="Edit">
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td><input class="date" type="date" /></td>
+                        <td><input type="checkbox" class="checkboxtables"></td>
+                        <td><input class="edit-button" id="checkboxedit" type="image" src="../imagem/edit.png"
+                                alt="Edit">
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
     </div>
-    
-    <div class="configperfil">
-        <img width="250" src="../imagem/perfil.png" alt="Perfil" />
-        <p id="textoperfil">Olá Francisco</p>
+
+    <!-- Modal de Criar Tarefa -->
+    <div id="createModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Criar Tarefa</h2>
+            <h3>Descrição</h3>
+            <textarea id="descricao" rows="4"></textarea><br>
+            <label for="data_create">Data:</label>
+            <input id="data_create" type="date" />
+            <br><br>
+            <button id="gravar" class="animacao">Gravar</button>
+        </div>
     </div>
-    <div><h1 id="titulosecundario">As minhas tarefas</h1></div>
 
+    <!-- Modal de Editar Tarefa -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Editar Tarefa</h2>
+            <h3>Descrição</h3>
+            <textarea id="descricao_edit" rows="4"></textarea><br>
+            <label for="data_edit">Data:</label>
+            <input id="data_edit" type="date" />
+            <br><br>
+            <div class="botoesmodal">
+                <button id="gravar2" class="animacao">Gravar</button>
+                <button id="apagar" class="animacao">Apagar</button>
+            </div>
+        </div>
+    </div>
 
-    <div>
-    <table>
-        <caption><button class="animacao">Criar Tarefa</button></caption>
-    <thead>
-        <tr>
-            <th>Tarefa</th>
-            <th>Data</th>
-            <th>Estado</th>
-            <th>Editar</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-
-        
-    </tbody>
-
-    </table>
-</div>
-
-</div>
+    <script src="main.js"></script>
 </body>
+
 </html>
